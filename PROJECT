@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: kubebuilder-demo
 repo: lobby-controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: my.domain
+  group: srvptt2.online
+  kind: Lobby
+  path: lobby-controller/api/v1beta1
+  version: v1beta1
 version: "3"
